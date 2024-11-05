@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahendran M - Portfolio</title>
+
+  <style>
+    /* Reset some basic styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    /* Header Styling */
+    header {
+      background: #333;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    /* Navigation Bar */
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #444;
+      padding: 1rem;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      margin: 0 0.5rem;
+      border-radius: 5px;
+    }
+
+    nav a:hover {
+      background-color: #555;
+    }
+
+    /* Main Content Styling */
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+
+    /* About Section */
+    .about {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .about img {
+      width: 150px;
+      border-radius: 50%;
+    }
+
+    /* Footer Styling */
+    footer {
+      text-align: center;
+      background: #333;
+      color: #fff;
+      padding: 1rem;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .about {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav {
+        flex-direction: column;
+      }
+
+      nav a {
+        margin: 0.5rem 0;
+      }
+
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mahendran M</h1>
+    <p>Student at R P Sarathy Institute of Technology | CSE Department</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container">
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="about">
+        <img src="A.jpg" alt="Mahendran M">
+        <div>
+          <p>Hello! I'm Mahendran M, a Computer Science and Engineering student at R P Sarathy Institute of Technology. I have a strong passion for coding, problem-solving, and exploring new technologies. I am always looking for opportunities to grow my skills and contribute to impactful projects.</p>
+          <p>Feel free to check out my work and connect with me!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Programming Languages: C, C++, Java, Python</li>
+        <li>Web Development: HTML, CSS, JavaScript, React.js</li>
+        <li>Database Management: MySQL, MongoDB</li>
+        <li>Software Development: Data Structures, Algorithms, OOP</li>
+        <li>Tools & Technologies: Git, Docker, Linux</li>
+        <li>Cloud Computing: AWS, Google Cloud</li>
+        <li>Machine Learning: Basic knowledge of ML algorithms</li>
+      </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <p>Here are some of the projects I have worked on:</p>
+      <ul>
+        <li><a href="https://github.com/your-github-link" target="_blank">Project 1: Web Development Portfolio</a></li>
+        <li><a href="https://github.com/your-github-link" target="_blank">Project 2: Machine Learning Model for Classification</a></li>
+        <li><a href="https://github.com/your-github-link" target="_blank">Project 3: Full-Stack Web Application (React, Node.js)</a></li>
+      </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>You can reach me at:</p>
+      <p>Email: <a href="mailto:mahendran@example.com">mahendran@example.com</a></p>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Mahendran M | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    // JavaScript for smooth scrolling (if necessary)
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
